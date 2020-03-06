@@ -1,0 +1,8 @@
+# composer
+
+/vendor/
+
+# phpunit
+
+/test/out/
+/test/.phpunit.result.cache

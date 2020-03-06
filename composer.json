@@ -1,0 +1,32 @@
+{
+  "name": "bitnix/dotenv",
+  "description": "Bitnix Dotenv",
+  "type": "library",
+  "license": "AGPL-3.0",
+  "authors": [
+    { "name": "bitnix", "email": "bitnix@riseup.net" }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "bitnix/parse": "^0.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Bitnix\\Dotenv\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bitnix\\Dotenv\\" : "test/src"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --colors=always -c test/phpunit.xml --coverage-html test/out"
+  }
+}
