@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47cc582ad619ece1de4fdb33908a1f4c",
+    "content-hash": "a2c86f7195e43c71805a4e5a8bf233ae",
     "packages": [
         {
             "name": "bitnix/parse",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jimbras/bitnix-parse.git",
-                "reference": "e75df2b67f894a63b734642dd512a2766129bcc2"
+                "reference": "04d168dc913c6cae13aa9b51bae800f23bb14220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jimbras/bitnix-parse/zipball/e75df2b67f894a63b734642dd512a2766129bcc2",
-                "reference": "e75df2b67f894a63b734642dd512a2766129bcc2",
+                "url": "https://api.github.com/repos/jimbras/bitnix-parse/zipball/04d168dc913c6cae13aa9b51bae800f23bb14220",
+                "reference": "04d168dc913c6cae13aa9b51bae800f23bb14220",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 }
             ],
             "description": "Bitnix Lexer/Parser",
-            "time": "2020-03-05T17:46:15+00:00"
+            "time": "2020-03-06T11:26:50+00:00"
         }
     ],
     "packages-dev": [

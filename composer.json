@@ -8,7 +8,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "bitnix/parse": "^0.1.0"
+    "bitnix/parse": "^0.1"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5"
