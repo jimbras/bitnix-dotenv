@@ -134,7 +134,7 @@ final class Parser {
                 $value = null;
 
                 if ($token = $this->lexer->consume(self::T_VAR_VALUE)) {
-                    $value = $this->value($token->lexeme(), true, true, $env);
+                    $value = $this->value($token->lexeme(), true, false, $env);
                 } else if ($this->lexer->consume(self::T_SINGLE_QUOTE)) {
                     $value = '';
                     while ($token = $this->lexer->consume(self::T_RAW_TEXT)) {
@@ -177,11 +177,8 @@ final class Parser {
      */
     private function value(string $value, bool $cast, bool $unfold, array $env = null) {
 
-        if (preg_match('~\s~', $value)) {
-            $value = \preg_replace('~[\s]+~', ' ', $value);
-            if ($unfold) {
-                $value = \preg_replace('~\\\\ ~', '', $value);
-            }
+        if ($unfold && preg_match('~\r?\n~', $value)) {
+            $value = \preg_replace('~\\\\\r?\n\s+~', '', $value);
         } else if ($cast) {
             $test = \strtolower($value);
 

@@ -57,8 +57,8 @@ class ParserTest extends TestCase {
         $this->assertSame([
             'APP_NAME'        => 'foo',
             'APP_FOO'         => null,
-            'APP_ZIG'         => 'zag zoe ',
-            'APP_ZAG'         => 'zig \ zoe',
+            'APP_ZIG'         => 'zag zoe      ',
+            'APP_ZAG'         => "zig \\\n              zoe",
             'APP_THIS'        => 'foobar',
             'APP_THAT'        => 'bar',
             'APP_WHATEVER'    => 'foobar/bar/baz',
