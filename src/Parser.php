@@ -202,8 +202,8 @@ final class Parser {
         }
 
         if ($env) {
-            $value = \preg_replace_callback('~\$\{([^}]*)\}~', function($m) use ($env) {
-                return $env[$m[1]] ?? '';
+            $value = \preg_replace_callback('~\$\{(([^:]*)\:\-([^}]*)|([^}]*))\}~', function($m) use ($env) {
+                return $env[$m[1]] ?? $m[3];
             }, $value);
         }
 

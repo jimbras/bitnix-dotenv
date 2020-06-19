@@ -61,6 +61,7 @@ class ParserTest extends TestCase {
             'APP_ZAG'         => "zig \\\n              zoe",
             'APP_THIS'        => 'foobar',
             'APP_THAT'        => 'bar',
+            'APP_DEFAULT'     => 'zigzag',
             'APP_WHATEVER'    => 'foobar/bar/baz',
             'APP_IGNORE'      => '${APP_NAME}bar',
             'APP_NULL'        => null,
